@@ -19,9 +19,9 @@ body
 {
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 30px;
   background: #0d614b;
   padding: 40px 60px;
@@ -60,3 +60,38 @@ h2
     transform-style: preserve-3d;
     perspective: 500px;
 }
+
+.item
+{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background: #fff;
+    transition: 0.25s;
+}
+.item.boxOpen
+{
+    transform: rotateY('0deg');
+}
+
+.item::after
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #209d7b;
+    /*opacity: 0.85;*/
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+.boxOpen::after ,
+.boxMatch::after
+{
+    transform: rotateY(180deg);
+}
+
