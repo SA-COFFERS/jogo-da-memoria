@@ -15,9 +15,9 @@ body
     min-height: 100vh;
     background: #0a3c2f;
 }
-.container
+.container, win
 {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +25,10 @@ body
   gap: 30px;
   background: #0d614b;
   padding: 40px 60px;
+  transition: all 0.5s ease-in-out;
+}
+.win{
+    scale: 0;
 }
 h2
 {
