@@ -13,7 +13,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #0a3c2f;
+    background: #0E2E41;
 }
 .container, win
 {
@@ -23,7 +23,7 @@ body
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  background: #0d614b;
+  background:  #05466B;
   padding: 40px 60px;
   transition: all 0.5s ease-in-out;
 }
@@ -87,7 +87,7 @@ h2
     content: '';
     position: absolute;
     inset: 0;
-    background: #209d7b;
+    background:#0E2E41;
     transition: 0.25s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
