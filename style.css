@@ -25,7 +25,7 @@ body
   gap: 30px;
   background:  #05466B;
   padding: 40px 60px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 .win{
     scale: 0;
@@ -75,7 +75,7 @@ h2
     align-items: center;
     font-size: 3em;
     background: #fff;
-    transition: 0.50s;
+    transition: 0.75s;
 }
 .item.boxOpen
 {
@@ -88,7 +88,7 @@ h2
     position: absolute;
     inset: 0;
     background:#0E2E41;
-    transition: 0.25s;
+    transition: 0.75s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
 }
