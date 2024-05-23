@@ -1,10 +1,16 @@
-const emojis = ["👌","👌","👀","👀","💩","💩","😈","😈","🦁","🦁","😎","😎","😴","😴","🤯","🤯"];
+const emojis = ["⚠️","⚠️","🚸","🚸","🚧","🚧","🛑","🛑","🚦","🚦","🚳","🚳","🚷","🚷","⛔","⛔"];
         var shuf_emojis = emojis.sort(() => (Math.random() > .5) ? 2 : -1);
         for( var i =0; i<emojis.length; i++) {
             let box = document.createElement('div')
             box.className = 'item';
             box.innerHTML =  shuf_emojis[i]
 
+            let attempts = 0;
+
+            box.onclick = function(){
+            this.classList.add('boxOpen')
+            attempts++;
+}
             box.onclick = function(){
                 this.classList.add('boxOpen')
                 setTimeout(function(){
@@ -28,7 +34,7 @@ const emojis = ["👌","👌","👀","👀","💩","💩","😈","😈","🦁","
 
                         }
                     }
-                },500)
+                },1000)
             
 
             }
